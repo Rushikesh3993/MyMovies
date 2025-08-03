@@ -281,3 +281,127 @@ footer{
     /* align-items: center; */
     padding-bottom: 34px;
 }
+
+/* ✅ Final Mobile Fix – Drop this at the end */
+@media screen and (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  nav img {
+    width: 160px;
+  }
+
+  nav div {
+    display: flex;
+    gap: 10px;
+  }
+
+  .main {
+    height: auto;
+    background-size: cover;
+  }
+
+  .main .box {
+    height: auto;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 26px;
+  }
+
+  .hero > :nth-child(2),
+  .hero > :nth-child(3) {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .main input {
+    width: 90%;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .btn-red {
+    width: 90%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  .first {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .first > div > span {
+    font-size: 20px !important;
+  }
+
+  .secImg {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .secImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .secImg video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 54%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .faqbox {
+    flex-direction: column;
+    font-size: 18px;
+    padding: 16px;
+    align-items: flex-start;
+    width: 90%;
+    margin: 16px auto;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+}

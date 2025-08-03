@@ -11,7 +11,7 @@ body {
 }
 
 .main {
-    background-image: url("assests/images/main_img.jpg");
+    background-image: url("assests/images/main_img1.png");
     background-position: center center;
     background-size: max(2000px, 100vw);
     background-repeat: no-repeat;
